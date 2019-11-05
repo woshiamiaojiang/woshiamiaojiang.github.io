@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>SSR安装教程 - Hexo</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="John Doe">
+<meta name="description" content="在CentOS服务器上搭建SSR服务教程。">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?56034932">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+                Home
+            </a>
+            
+
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Hexo
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Hexo</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Journal.
+        </div>
+        <div class="nav-subtitle">
+            隻言片語<br>於此匯聚
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        
+
+        
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2019 <a href="http://yoursite.com">Hexo</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper"
+                 style="background-image: url('https://www.myfreax.com/content/images/2019/07/Shadowsocks.jpg')">
+                <div class="post-title">
+                    SSR安装教程
+                    <div class="post-meta">
+                        <time datetime="2019-10-11T04:00:00.000Z" itemprop="datePublished">
+                            2019-10-11 12:00
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/SSR/'>SSR</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h2><span id="一-安装锐速破解版">一. 安装锐速破解版</span></h2><p>声明:我的服务器是CentOS-7.5版本</p>
+<h3><span id="1下载锐速安装脚本">1.下载锐速安装脚本</span></h3><hr>
+<pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># wget -N --no-check-certificate https://raw.githubusercontent.com/wn789/serverspeeder/master/serverspeeder.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="2对脚本进行赋权">2.对脚本进行赋权</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># chmod +x serverspeeder.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="3执行脚本">3.执行脚本</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># bash serverspeeder.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="4如果报错">4.如果报错</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell">This kernel is not supported<span class="token punctuation">.</span> Trying fuzzy matching…Serverspeeder is not supported on this kernel<span class="token operator">!</span> View all supported systems and kernels here: https:<span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>91yun<span class="token punctuation">.</span>org<span class="token operator">/</span>serverspeeder91yun<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>说明锐速不支持CentOS内核</p>
+<h3><span id="5修改centos内核">5.修改CentOS内核</span></h3><p>将CentOS7内核更换为： 3.10.0-229.1.2.el7.x86_64</p>
+<pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="6重启服务器">6.重启服务器</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># reboot</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="7确认内核是否更换">7.确认内核是否更换</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># uname -r</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-powershell"><code class="language-powershell">3<span class="token punctuation">.</span>10<span class="token punctuation">.</span>0<span class="token operator">-</span>229<span class="token punctuation">.</span>1<span class="token punctuation">.</span>2<span class="token punctuation">.</span>el7<span class="token punctuation">.</span>x86_64<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="8重新执行安装锐速脚本">8.重新执行安装锐速脚本</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># bash serverspeeder.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="9启动锐速">9.启动锐速</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># service serverSpeeder start</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="10锐速常用命令">10.锐速常用命令</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell">service serverSpeeder <span class="token function">start</span> <span class="token comment" spellcheck="true">#启动</span>
+service serverSpeeder stop <span class="token comment" spellcheck="true">#停止</span>
+service serverSpeeder reload <span class="token comment" spellcheck="true">#重新加载配置</span>
+service serverSpeeder restart <span class="token comment" spellcheck="true">#重启</span>
+service serverSpeeder status <span class="token comment" spellcheck="true">#状态</span>
+service serverSpeeder stats <span class="token comment" spellcheck="true">#统计</span>
+service serverSpeeder renewLic <span class="token comment" spellcheck="true">#更新许可文件</span>
+service serverSpeeder update <span class="token comment" spellcheck="true">#更新</span>
+chattr <span class="token operator">-</span>i <span class="token operator">/</span>serverspeeder<span class="token operator">/</span>etc<span class="token operator">/</span>apx<span class="token operator">*</span> &amp;&amp; <span class="token operator">/</span>serverspeeder<span class="token operator">/</span>bin<span class="token operator">/</span>serverSpeeder<span class="token punctuation">.</span>sh uninstall <span class="token operator">-</span>f <span class="token comment" spellcheck="true">#卸载</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2><span id="二-安装ssr">二. 安装SSR</span></h2><h3><span id="1下载脚本">1.下载脚本</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># wget –no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="2赋权">2.赋权</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># chmod +x shadowsocksR.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="3安装依次选择默认选项">3.安装，依次选择默认选项</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[root@CentOS-based7-5 olc]</span><span class="token comment" spellcheck="true"># ./shadowsocksR.sh 2>&amp;1 | tee shadowsocksR.log</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3><span id="4ssr常用命令">4.SSR常用命令</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell">启动：<span class="token operator">/</span>etc<span class="token operator">/</span>init<span class="token punctuation">.</span>d<span class="token operator">/</span>shadowsocks <span class="token function">start</span>
+停止：<span class="token operator">/</span>etc<span class="token operator">/</span>init<span class="token punctuation">.</span>d<span class="token operator">/</span>shadowsocks stop
+重启：<span class="token operator">/</span>etc<span class="token operator">/</span>init<span class="token punctuation">.</span>d<span class="token operator">/</span>shadowsocks restart
+状态：<span class="token operator">/</span>etc<span class="token operator">/</span>init<span class="token punctuation">.</span>d<span class="token operator">/</span>shadowsocks status<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3><span id="5ssr日志路径">5.SSR日志路径</span></h3><pre class="line-numbers language-powershell"><code class="language-powershell">配置文件路径：<span class="token function">cat</span> <span class="token operator">/</span>etc<span class="token operator">/</span>shadowsocks<span class="token punctuation">.</span>json
+日志文件路径：<span class="token function">cat</span> <span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>log<span class="token operator">/</span>shadowsocksr<span class="token punctuation">.</span>log
+代码安装目录：<span class="token function">cat</span> <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>shadowsocks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<hr>
+<p>References:</p>
+<p>[1] <a href="https://www.gaoshilei.com/2017/11/07/SSR/" target="_blank" rel="noopener">VPS+SSR+锐速（BBR魔改版）实现超级加速</a></p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2019/06/16/CAS%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/">
+        Next post<br>CAS
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2019 <a href="http://yoursite.com">Hexo</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?55913733"></script>
+
+
+
+</body>
+</html>

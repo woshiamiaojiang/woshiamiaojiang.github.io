@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Java思维导图 - Hexo</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="John Doe">
+<meta name="description" content="学习Java的思维导图笔记。">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?24771828">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+                Home
+            </a>
+            
+
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Hexo
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Hexo</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Journal.
+        </div>
+        <div class="nav-subtitle">
+            隻言片語<br>於此匯聚
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        
+
+        
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2019 <a href="http://yoursite.com">Hexo</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper"
+                 style="background-image: url('https://financialit.net/sites/default/files/mindman_logo.gif')">
+                <div class="post-title">
+                    Java思维导图
+                    <div class="post-meta">
+                        <time datetime="2019-05-15T04:00:00.000Z" itemprop="datePublished">
+                            2019-05-15 12:00
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Mind-Map/'>Mind Map</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <!-- toc -->
+
+<ul>
+<li><a href="#第一章-初识java进制-原码">第一章 初识Java(进制, 原码)</a></li>
+<li><a href="#第二章-数据类型和运算符">第二章 数据类型和运算符</a></li>
+<li><a href="#第三章-控制流程语句">第三章 控制流程语句</a></li>
+<li><a href="#第四章-数组">第四章 数组</a></li>
+<li><a href="#第五章-面向对象编程1封装">第五章 面向对象编程1(封装)</a></li>
+<li><a href="#第六章-面向对象编程2继承多态">第六章 面向对象编程2(继承多态)</a></li>
+<li><a href="#第七章-常用类">第七章 常用类</a></li>
+<li><a href="#第八章-内部类-容器类">第八章 内部类 容器类</a></li>
+<li><a href="#第九章-io流">第九章 IO流</a></li>
+<li><a href="#第十章-多线程">第十章 多线程</a></li>
+<li><a href="#第十一章-网络编程">第十一章 网络编程</a></li>
+<li><a href="#第十二章-正则表达式">第十二章 正则表达式</a></li>
+<li><a href="#第十三章-oracle">第十三章 Oracle</a></li>
+<li><a href="#第十四章-jdbc">第十四章 JDBC</a></li>
+<li><a href="#第十五章-html">第十五章 HTML</a></li>
+<li><a href="#第十六章-css">第十六章 CSS</a></li>
+<li><a href="#第十七章-javascript1">第十七章 JavaScript1</a></li>
+<li><a href="#第十七章-javascript2">第十七章 JavaScript2</a></li>
+<li><a href="#第十七章-javascript3">第十七章 JavaScript3</a></li>
+<li><a href="#第十八章-web1http-servlet-tomcat-log4j">第十八章 Web1(Http, Servlet, Tomcat, Log4j)</a></li>
+<li><a href="#第十八章-web2servlet生命周期-request-response-转发重定向-session">第十八章 Web2(Servlet生命周期, Request, Response, 转发重定向, Session)</a></li>
+<li><a href="#第十八章-web3cookie-四大作用域-中文乱码">第十八章 Web3(Cookie, 四大作用域, 中文乱码)</a></li>
+<li><a href="#第十九章-jsp">第十九章 JSP</a></li>
+<li><a href="#第二十章-mvc三层架构">第二十章 MVC三层架构</a></li>
+<li><a href="#第二十一章-el-jstl">第二十一章 EL + JSTL</a></li>
+<li><a href="#第二十二章-jquery">第二十二章 jQuery</a></li>
+<li><a href="#第二十三章-ajax1">第二十三章 Ajax1</a></li>
+<li><a href="#第二十四章-ajax2">第二十四章 Ajax2</a></li>
+<li><a href="#第二十五章-struts21">第二十五章 Struts2(1)</a></li>
+<li><a href="#第二十六章-struts22">第二十六章 Struts2(2)</a></li>
+<li><a href="#第二十七章-struts23拦截器">第二十七章 Struts2(3拦截器)</a></li>
+<li><a href="#第二十八章-hibernate1">第二十八章 Hibernate1</a></li>
+<li><a href="#第二十九章-hibernate2">第二十九章 Hibernate2</a></li>
+<li><a href="#第三十章-hibernate3hql查询缓存机制懒加载乐悲观锁注解osiv">第三十章 Hibernate3(HQL查询，缓存机制，懒加载，乐悲观锁，注解，OSIV)</a></li>
+<li><a href="#第三十一章-弹性布局">第三十一章 弹性布局</a></li>
+<li><a href="#第三十二章-css3-3d转换">第三十二章 CSS3-3D转换</a></li>
+<li><a href="#第三十三章-vue1绑定条件渲染表单输入">第三十三章 Vue1(绑定，条件渲染，表单输入)</a></li>
+<li><a href="#第三十四章-vue2组件">第三十四章 Vue2(组件)</a></li>
+<li><a href="#第三十五章-spring1">第三十五章 Spring1</a></li>
+<li><a href="#第三十六章-spring2">第三十六章 Spring2</a></li>
+<li><a href="#第三十七章-spring3">第三十七章 Spring3</a></li>
+</ul>
+<!-- tocstop -->
+
+<h2><span id="第一章-初识java进制-原码">第一章 初识Java(进制, 原码)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%88%9D%E8%AF%86Java(%E8%BF%9B%E5%88%B6,%20%E5%8E%9F%E7%A0%81).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%88%9D%E8%AF%86Java(%E8%BF%9B%E5%88%B6,%20%E5%8E%9F%E7%A0%81).html]</a>(<a href="https://miion.me/mindmanager/2017年10月20日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月20日</a> 第一章 初识Java(进制, 原码).html)</p>
+<h2><span id="第二章-数据类型和运算符">第二章 数据类型和运算符</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6.html]</a>(<a href="https://miion.me/mindmanager/2017年10月21日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月21日</a> 第二章 数据类型和运算符.html)</p>
+<h2><span id="第三章-控制流程语句">第三章 控制流程语句</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8824%E6%97%A5%20%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8824%E6%97%A5%20%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5.html]</a>(<a href="https://miion.me/mindmanager/2017年10月24日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月24日</a> 第三章 控制流程语句.html)</p>
+<h2><span id="第四章-数组">第四章 数组</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8827%E6%97%A5%20%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%95%B0%E7%BB%84.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8827%E6%97%A5%20%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%95%B0%E7%BB%84.html]</a>(<a href="https://miion.me/mindmanager/2017年10月27日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月27日</a> 第四章 数组.html)</p>
+<h2><span id="第五章-面向对象编程1封装">第五章 面向对象编程1(封装)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8828%E6%97%A5%20%E7%AC%AC%E4%BA%94%E7%AB%A0%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B1(%E5%B0%81%E8%A3%85).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8828%E6%97%A5%20%E7%AC%AC%E4%BA%94%E7%AB%A0%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B1(%E5%B0%81%E8%A3%85).html]</a>(<a href="https://miion.me/mindmanager/2017年10月28日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月28日</a> 第五章 面向对象编程1(封装).html)</p>
+<h2><span id="第六章-面向对象编程2继承多态">第六章 面向对象编程2(继承多态)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8831%E6%97%A5%20%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B2(%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B410%E6%9C%8831%E6%97%A5%20%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B2(%E7%BB%A7%E6%89%BF%E5%A4%9A%E6%80%81).html]</a>(<a href="https://miion.me/mindmanager/2017年10月31日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年10月31日</a> 第六章 面向对象编程2(继承多态).html)</p>
+<h2><span id="第七章-常用类">第七章 常用类</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8806%E6%97%A5%20%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%B8%B8%E7%94%A8%E7%B1%BB.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8806%E6%97%A5%20%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%B8%B8%E7%94%A8%E7%B1%BB.html]</a>(<a href="https://miion.me/mindmanager/2017年11月06日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月06日</a> 第七章 常用类.html)</p>
+<h2><span id="第八章-内部类-容器类">第八章 内部类 容器类</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E5%86%85%E9%83%A8%E7%B1%BB%20%E5%AE%B9%E5%99%A8%E7%B1%BB.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E5%86%85%E9%83%A8%E7%B1%BB%20%E5%AE%B9%E5%99%A8%E7%B1%BB.html]</a>(<a href="https://miion.me/mindmanager/2017年11月09日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月09日</a> 第八章 内部类 容器类.html)</p>
+<h2><span id="第九章-io流">第九章 IO流</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E4%B9%9D%E7%AB%A0%20IO%E6%B5%81.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E4%B9%9D%E7%AB%A0%20IO%E6%B5%81.html]</a>(<a href="https://miion.me/mindmanager/2017年11月12日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月12日</a> 第九章 IO流.html)</p>
+<h2><span id="第十章-多线程">第十章 多线程</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8816%E6%97%A5%20%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E5%A4%9A%E7%BA%BF%E7%A8%8B.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8816%E6%97%A5%20%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E5%A4%9A%E7%BA%BF%E7%A8%8B.html]</a>(<a href="https://miion.me/mindmanager/2017年11月16日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月16日</a> 第十章 多线程.html)</p>
+<h2><span id="第十一章-网络编程">第十一章 网络编程</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.html]</a>(<a href="https://miion.me/mindmanager/2017年11月18日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月18日</a> 第十一章 网络编程.html)</p>
+<h2><span id="第十二章-正则表达式">第十二章 正则表达式</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html]</a>(<a href="https://miion.me/mindmanager/2017年11月20日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月20日</a> 第十二章 正则表达式.html)</p>
+<h2><span id="第十三章-oracle">第十三章 Oracle</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%20Oracle.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%20Oracle.html]</a>(<a href="https://miion.me/mindmanager/2017年11月21日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月21日</a> 第十三章 Oracle.html)</p>
+<h2><span id="第十四章-jdbc">第十四章 JDBC</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8828%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%20JDBC.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B411%E6%9C%8828%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%20JDBC.html]</a>(<a href="https://miion.me/mindmanager/2017年11月28日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年11月28日</a> 第十四章 JDBC.html)</p>
+<h2><span id="第十五章-html">第十五章 HTML</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8805%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0%20HTML.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8805%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0%20HTML.html]</a>(<a href="https://miion.me/mindmanager/2017年12月05日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月05日</a> 第十五章 HTML.html)</p>
+<h2><span id="第十六章-css">第十六章 CSS</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8806%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0%20CSS.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8806%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0%20CSS.html]</a>(<a href="https://miion.me/mindmanager/2017年12月06日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月06日</a> 第十六章 CSS.html)</p>
+<h2><span id="第十七章-javascript1">第十七章 JavaScript1</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8808%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript1.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8808%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript1.html]</a>(<a href="https://miion.me/mindmanager/2017年12月08日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月08日</a> 第十七章 JavaScript1.html)</p>
+<h2><span id="第十七章-javascript2">第十七章 JavaScript2</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript2.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript2.html]</a>(<a href="https://miion.me/mindmanager/2017年12月09日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月09日</a> 第十七章 JavaScript2.html)</p>
+<h2><span id="第十七章-javascript3">第十七章 JavaScript3</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript3.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0%20JavaScript3.html]</a>(<a href="https://miion.me/mindmanager/2017年12月11日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月11日</a> 第十七章 JavaScript3.html)</p>
+<h2><span id="第十八章-web1http-servlet-tomcat-log4j">第十八章 Web1(Http, Servlet, Tomcat, Log4j)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web1(Http,%20Servlet,%20Tomcat,%20Log4j).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web1(Http,%20Servlet,%20Tomcat,%20Log4j).html]</a>(<a href="https://miion.me/mindmanager/2017年12月12日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月12日</a> 第十八章 Web1(Http, Servlet, Tomcat, Log4j).html)</p>
+<h2><span id="第十八章-web2servlet生命周期-request-response-转发重定向-session">第十八章 Web2(Servlet生命周期, Request, Response, 转发重定向, Session)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8814%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web2(Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F,%20Request,%20Response,%20%E8%BD%AC%E5%8F%91%E9%87%8D%E5%AE%9A%E5%90%91,%20Session).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8814%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web2(Servlet%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F,%20Request,%20Response,%20%E8%BD%AC%E5%8F%91%E9%87%8D%E5%AE%9A%E5%90%91,%20Session).html]</a>(<a href="https://miion.me/mindmanager/2017年12月14日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月14日</a> 第十八章 Web2(Servlet生命周期, Request, Response, 转发重定向, Session).html)</p>
+<h2><span id="第十八章-web3cookie-四大作用域-中文乱码">第十八章 Web3(Cookie, 四大作用域, 中文乱码)</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8815%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web3(Cookie,%20%E5%9B%9B%E5%A4%A7%E4%BD%9C%E7%94%A8%E5%9F%9F,%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8815%E6%97%A5%20%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0%20Web3(Cookie,%20%E5%9B%9B%E5%A4%A7%E4%BD%9C%E7%94%A8%E5%9F%9F,%20%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81).html]</a>(<a href="https://miion.me/mindmanager/2017年12月15日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月15日</a> 第十八章 Web3(Cookie, 四大作用域, 中文乱码).html)</p>
+<h2><span id="第十九章-jsp">第十九章 JSP</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8817%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%20JSP.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8817%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%20JSP.html]</a>(<a href="https://miion.me/mindmanager/2017年12月17日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月17日</a> 第十九章 JSP.html)</p>
+<h2><span id="第二十章-mvc三层架构">第二十章 MVC三层架构</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8817%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%20MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8817%E6%97%A5%20%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0%20MVC%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84.html]</a>(<a href="https://miion.me/mindmanager/2017年12月17日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月17日</a> 第十九章 MVC三层架构.html)</p>
+<h2><span id="第二十一章-el-jstl">第二十一章 EL + JSTL</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0%20EL%20+%20JSTL.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0%20EL%20+%20JSTL.html]</a>(<a href="https://miion.me/mindmanager/2017年12月18日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月18日</a> 第二十章 EL + JSTL.html)</p>
+<h2><span id="第二十二章-jquery">第二十二章 jQuery</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8819%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0%20jQuery.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8819%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0%20jQuery.html]</a>(<a href="https://miion.me/mindmanager/2017年12月19日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月19日</a> 第二十一章 jQuery.html)</p>
+<h2><span id="第二十三章-ajax1">第二十三章 Ajax1</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%20Ajax.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8821%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%20Ajax.html]</a>(<a href="https://miion.me/mindmanager/2017年12月21日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月21日</a> 第二十二章 Ajax.html)</p>
+<h2><span id="第二十四章-ajax2">第二十四章 Ajax2</span></h2><p>[<a href="http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8822%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%20Ajax%E7%BB%83%E4%B9%A0.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2017%E5%B9%B412%E6%9C%8822%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%20Ajax%E7%BB%83%E4%B9%A0.html]</a>(<a href="https://miion.me/mindmanager/2017年12月22日" target="_blank" rel="noopener">https://miion.me/mindmanager/2017年12月22日</a> 第二十二章 Ajax练习.html)</p>
+<h2><span id="第二十五章-struts21">第二十五章 Struts2(1)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8808%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(1).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8808%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(1).html]</a>(<a href="https://miion.me/mindmanager/2018年01月08日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月08日</a> 第二十六章 Struts2(1).html)</p>
+<h2><span id="第二十六章-struts22">第二十六章 Struts2(2)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(2).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8809%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(2).html]</a>(<a href="https://miion.me/mindmanager/2018年01月09日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月09日</a> 第二十六章 Struts2(2).html)</p>
+<h2><span id="第二十七章-struts23拦截器">第二十七章 Struts2(3拦截器)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(3%E6%8B%A6%E6%88%AA%E5%99%A8).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0%20Struts2(3%E6%8B%A6%E6%88%AA%E5%99%A8).html]</a>(<a href="https://miion.me/mindmanager/2018年01月11日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月11日</a> 第二十六章 Struts2(3拦截器).html)</p>
+<h2><span id="第二十八章-hibernate1">第二十八章 Hibernate1</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0%20Hibernate1.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8811%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0%20Hibernate1.html]</a>(<a href="https://miion.me/mindmanager/2018年01月11日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月11日</a> 第二十七章 Hibernate1.html)</p>
+<h2><span id="第二十九章-hibernate2">第二十九章 Hibernate2</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E7%AB%A0%20Hibernate2.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8812%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E7%AB%A0%20Hibernate2.html]</a>(<a href="https://miion.me/mindmanager/2018年01月12日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月12日</a> 第二十八章 Hibernate2.html)</p>
+<h2><span id="第三十章-hibernate3hql查询缓存机制懒加载乐悲观锁注解osiv">第三十章 Hibernate3(HQL查询，缓存机制，懒加载，乐悲观锁，注解，OSIV)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8813%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0%20Hibernate3(HQL%E6%9F%A5%E8%AF%A2%EF%BC%8C%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6%EF%BC%8C%E6%87%92%E5%8A%A0%E8%BD%BD%EF%BC%8C%E4%B9%90%E6%82%B2%E8%A7%82%E9%94%81%EF%BC%8C%E6%B3%A8%E8%A7%A3%EF%BC%8COSIV).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8813%E6%97%A5%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0%20Hibernate3(HQL%E6%9F%A5%E8%AF%A2%EF%BC%8C%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6%EF%BC%8C%E6%87%92%E5%8A%A0%E8%BD%BD%EF%BC%8C%E4%B9%90%E6%82%B2%E8%A7%82%E9%94%81%EF%BC%8C%E6%B3%A8%E8%A7%A3%EF%BC%8COSIV).html]</a>(<a href="https://miion.me/mindmanager/2018年01月13日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月13日</a> 第二十九章 Hibernate3(HQL查询，缓存机制，懒加载，乐悲观锁，注解，OSIV).html)</p>
+<h2><span id="第三十一章-弹性布局">第三十一章 弹性布局</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8816%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E7%AB%A0%20%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8816%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E7%AB%A0%20%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80.html]</a>(<a href="https://miion.me/mindmanager/2018年01月16日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月16日</a> 第三十章 弹性布局.html)</p>
+<h2><span id="第三十二章-css3-3d转换">第三十二章 CSS3-3D转换</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E7%AB%A0%20CSS3-3D%E8%BD%AC%E6%8D%A2.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8818%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E7%AB%A0%20CSS3-3D%E8%BD%AC%E6%8D%A2.html]</a>(<a href="https://miion.me/mindmanager/2018年01月18日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月18日</a> 第三十一章 CSS3-3D转换.html)</p>
+<h2><span id="第三十三章-vue1绑定条件渲染表单输入">第三十三章 Vue1(绑定，条件渲染，表单输入)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8819%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E7%AB%A0%20Vue1(%E7%BB%91%E5%AE%9A%EF%BC%8C%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93%EF%BC%8C%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8819%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E7%AB%A0%20Vue1(%E7%BB%91%E5%AE%9A%EF%BC%8C%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93%EF%BC%8C%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5).html]</a>(<a href="https://miion.me/mindmanager/2018年01月19日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月19日</a> 第三十二章 Vue1(绑定，条件渲染，表单输入).html)</p>
+<h2><span id="第三十四章-vue2组件">第三十四章 Vue2(组件)</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E7%AB%A0%20Vue2(%E7%BB%84%E4%BB%B6).html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8820%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E7%AB%A0%20Vue2(%E7%BB%84%E4%BB%B6).html]</a>(<a href="https://miion.me/mindmanager/2018年01月20日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月20日</a> 第三十三章 Vue2(组件).html)</p>
+<h2><span id="第三十五章-spring1">第三十五章 Spring1</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8829%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring1.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8829%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring1.html]</a>(<a href="https://miion.me/mindmanager/2018年01月29日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月29日</a> 第三十四章 Spring1.html)</p>
+<h2><span id="第三十六章-spring2">第三十六章 Spring2</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8830%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring2.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B401%E6%9C%8830%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring2.html]</a>(<a href="https://miion.me/mindmanager/2018年01月30日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年01月30日</a> 第三十四章 Spring2.html)</p>
+<h2><span id="第三十七章-spring3">第三十七章 Spring3</span></h2><p>[<a href="http://miion.me/mindmanager/2018%E5%B9%B402%E6%9C%8801%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring%203.html]" target="_blank" rel="noopener">http://miion.me/mindmanager/2018%E5%B9%B402%E6%9C%8801%E6%97%A5%20%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E7%AB%A0%20Spring%203.html]</a>(<a href="https://miion.me/mindmanager/2018年02月01日" target="_blank" rel="noopener">https://miion.me/mindmanager/2018年02月01日</a> 第三十四章 Spring 3.html)</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2019/05/15/SF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/">
+        Previous post<br>SF开发规范
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2019/02/13/Leyou%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE/">
+        Next post<br>Leyou商城
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2019 <a href="http://yoursite.com">Hexo</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?33528827"></script>
+
+
+
+</body>
+</html>
