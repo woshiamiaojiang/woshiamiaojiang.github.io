@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-08T15:04:17.989Z</updated>
+  <updated>2019-11-17T13:28:29.175Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pinyougou</title>
+    <link href="http://yoursite.com/2019/11/17/pinyougou/"/>
+    <id>http://yoursite.com/2019/11/17/pinyougou/</id>
+    <published>2019-11-17T13:00:00.000Z</published>
+    <updated>2019-11-17T13:28:29.175Z</updated>
+    
+    <summary type="html">
+    
+      品优购项目开发笔记
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="http://yoursite.com/tags/Project/"/>
+    
+  </entry>
   
   <entry>
     <title>SSR安装教程</title>
