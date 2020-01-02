@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-28T03:25:29.879Z</updated>
+  <updated>2020-01-02T14:10:54.039Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高效学习、工作的思考术</title>
+    <link href="http://yoursite.com/2020/01/02/%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E3%80%81%E5%B7%A5%E4%BD%9C%E7%9A%84%E6%80%9D%E8%80%83%E6%9C%AF/"/>
+    <id>http://yoursite.com/2020/01/02/高效学习、工作的思考术/</id>
+    <published>2020-01-02T13:57:30.000Z</published>
+    <updated>2020-01-02T14:10:54.039Z</updated>
+    
+    <summary type="html">
+    
+      思维导图创始人亲授：高效学习、工作的思考术（知乎·盐选专栏）学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="思维导图" scheme="http://yoursite.com/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>图解Java设计模式</title>
