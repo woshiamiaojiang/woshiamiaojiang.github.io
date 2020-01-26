@@ -4,7 +4,7 @@
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Archive: 2018/9 - Hexo</title>
+    <title>Hexo</title>
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="John Doe">
@@ -18,7 +18,7 @@
     <meta name="renderer" content="webkit">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css?57247841">
+<link rel="stylesheet" href="/css/journal.css?52242138">
 
 <link rel="icon" href="/favicon-48x48.ico">
 
@@ -64,7 +64,7 @@
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
     <div class="drawer-content">
         <div class="drawer-menu">
-            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+            <a class="a-block drawer-menu-item active" href="http://yoursite.com">
                 Home
             </a>
             
@@ -137,7 +137,19 @@
 
         
         
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                3<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>3
+            </span>
+        </div>
+        
 
+        
+        <a class="pagination-action" href="/page/2/">
+            <i class="material-icons pagination-action-icon">
+                <
+            </i>
+        </a>
         
 
         
@@ -145,42 +157,61 @@
     </div>
 </div>
 
-<div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-shadow">
-        
-        
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps">
-                <div class="post-item-info-wrapper">
-                    <div class="post-item-title  post-item-title-small">
-                        
-                        <a href="/archives/2018">2018</a> / 09
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
 
-        <a href="/2018/09/12/Diary/" class="a-block">
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-no-background">
+        
+        <a href="/2016/10/13/hello-world/" class="a-block">
             <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
+                <div class="post-item post-item-no-divider">
                     <div class="post-item-info-wrapper">
                         <div class="post-item-title">
-                            Diary
+                            Hello World
+                        </div>
+                        <div class="post-item-summary">
+                            hexo的初始文件，亦即the first post。
                         </div>
                         <div class="post-item-meta">
-                            2018-09-12
+                            2016-10-13
                         </div>
                     </div>
+                    
+                    <div class="post-item-image-wrapper">
+                        <!--<div class="post-item-image" style="background-image: url('/2016/10/13/hello-world/hexo.jpg')">-->
+						<div class="post-item-image" style="background-image: url('/2016/10/13/hello-world/hexo.jpg')">
+						</div>
+                    </div>
+                    
                 </div>
             </div>
         </a>
+        
+    
+        
+<div class="pagination index-page">
+    
+    <a class="pagination-action" href="/page/2/" style="opacity: 1">
+        
+            <i class="material-icons pagination-action-icon">
+                <
+            </i>
+        </a>
+
+        <div class="pagination-indicator">
+            <span>3/3</span>
+        </div>
 
         
-    </div>
-    
+            <a class="pagination-action" style="opacity: 0">
+                
+                <i class="material-icons pagination-action-icon">
+                    >
+                </i>
+            </a>
+</div>
 
+    </div>
     <div class="single-column-footer">
     Proudly published with Hexo<br>
     
@@ -201,7 +232,6 @@
         integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
         integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js?90147280"></script>
-
+<script src="/js/journal.js?22565676"></script>
 </body>
 </html>
