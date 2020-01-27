@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-26T13:09:28.851Z</updated>
+  <updated>2020-01-27T05:01:18.789Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>XMind2019超强盘点</title>
+    <link href="http://yoursite.com/2020/01/27/XMind2019%E8%B6%85%E5%BC%BA%E7%9B%98%E7%82%B9/"/>
+    <id>http://yoursite.com/2020/01/27/XMind2019超强盘点/</id>
+    <published>2020-01-27T03:08:16.000Z</published>
+    <updated>2020-01-27T05:01:18.789Z</updated>
+    
+    <summary type="html">
+    
+      XMind2019超强盘点
+    
+    </summary>
+    
+    
+    
+      <category term="思维导图" scheme="http://yoursite.com/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>提升效率、激发创意的思维导图课</title>
@@ -380,25 +399,6 @@
     
     
       <category term="Clean Code" scheme="http://yoursite.com/tags/Clean-Code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github上传</title>
-    <link href="http://yoursite.com/2017/11/13/Github%E4%B8%8A%E4%BC%A0%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2017/11/13/Github上传命令/</id>
-    <published>2017-11-13T04:00:00.000Z</published>
-    <updated>2019-11-24T05:22:50.985Z</updated>
-    
-    <summary type="html">
-    
-      上传本地文件到指定github远程仓库。
-    
-    </summary>
-    
-    
-    
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
     
   </entry>
   
