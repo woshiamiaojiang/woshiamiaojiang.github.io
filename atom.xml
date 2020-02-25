@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-24T07:23:38.050Z</updated>
+  <updated>2020-02-25T17:58:21.767Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优秀测试工程师的必备思维39讲</title>
+    <link href="http://yoursite.com/2020/02/26/%E4%BC%98%E7%A7%80%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E5%BF%85%E5%A4%87%E6%80%9D%E7%BB%B439%E8%AE%B2/"/>
+    <id>http://yoursite.com/2020/02/26/优秀测试工程师的必备思维39讲/</id>
+    <published>2020-02-25T17:56:40.000Z</published>
+    <updated>2020-02-25T17:58:21.767Z</updated>
+    
+    <summary type="html">
+    
+      慕课网专栏 - 优秀测试工程师的必备思维39讲学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给程序员的职场情商课</title>
+    <link href="http://yoursite.com/2020/02/26/%E7%BB%99%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E5%9C%BA%E6%83%85%E5%95%86%E8%AF%BE/"/>
+    <id>http://yoursite.com/2020/02/26/给程序员的职场情商课/</id>
+    <published>2020-02-25T17:53:30.000Z</published>
+    <updated>2020-02-25T17:56:44.914Z</updated>
+    
+    <summary type="html">
+    
+      慕课网专栏 - 给程序员的职场情商课学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="情商" scheme="http://yoursite.com/tags/%E6%83%85%E5%95%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试官系统精讲Java源码及大厂真题</title>
+    <link href="http://yoursite.com/2020/02/26/%E9%9D%A2%E8%AF%95%E5%AE%98%E7%B3%BB%E7%BB%9F%E7%B2%BE%E8%AE%B2Java%E6%BA%90%E7%A0%81%E5%8F%8A%E5%A4%A7%E5%8E%82%E7%9C%9F%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/02/26/面试官系统精讲Java源码及大厂真题/</id>
+    <published>2020-02-25T17:47:13.000Z</published>
+    <updated>2020-02-25T17:49:56.330Z</updated>
+    
+    <summary type="html">
+    
+      慕课网专栏 - 面试官系统精讲Java源码及大厂真题学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>码出规范：《阿里巴巴Java开发手册》详解学习笔记</title>
@@ -336,63 +393,6 @@
     
     
       <category term="SSR" scheme="http://yoursite.com/tags/SSR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xminds</title>
-    <link href="http://yoursite.com/2018/08/09/Xminds/"/>
-    <id>http://yoursite.com/2018/08/09/Xminds/</id>
-    <published>2018-08-09T04:00:00.000Z</published>
-    <updated>2019-11-24T05:25:31.479Z</updated>
-    
-    <summary type="html">
-    
-      Xmind思维导图。
-    
-    </summary>
-    
-    
-    
-      <category term="Mind Map" scheme="http://yoursite.com/tags/Mind-Map/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学堂在线JavaEE微专业</title>
-    <link href="http://yoursite.com/2018/07/23/Java%E5%BE%AE%E4%B8%93%E4%B8%9A%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF/"/>
-    <id>http://yoursite.com/2018/07/23/Java微专业学堂在线/</id>
-    <published>2018-07-23T04:00:00.000Z</published>
-    <updated>2019-11-24T05:23:27.384Z</updated>
-    
-    <summary type="html">
-    
-      学堂在线JavaEE企业开发课程。
-    
-    </summary>
-    
-    
-    
-      <category term="Concurrency" scheme="http://yoursite.com/tags/Concurrency/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Certificates</title>
-    <link href="http://yoursite.com/2018/01/17/Certificates/"/>
-    <id>http://yoursite.com/2018/01/17/Certificates/</id>
-    <published>2018-01-17T04:00:00.000Z</published>
-    <updated>2019-11-24T05:19:07.361Z</updated>
-    
-    <summary type="html">
-    
-      Certificates
-    
-    </summary>
-    
-    
-    
-      <category term="Certificates" scheme="http://yoursite.com/tags/Certificates/"/>
     
   </entry>
   
