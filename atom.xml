@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-26T06:51:40.628Z</updated>
+  <updated>2020-02-26T16:06:35.794Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java互联网架构师(P6+)课程</title>
+    <link href="http://yoursite.com/2020/02/27/Java%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84%E5%B8%88-P6-%E8%AF%BE%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/02/27/Java互联网架构师-P6-课程/</id>
+    <published>2020-02-26T16:03:58.000Z</published>
+    <updated>2020-02-26T16:06:35.794Z</updated>
+    
+    <summary type="html">
+    
+      Java互联网架构师(P6+)课程学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="Architect" scheme="http://yoursite.com/tags/Architect/"/>
+    
+  </entry>
   
   <entry>
     <title>从0开始 独立完成企业级Java电商网站开发(服务端)</title>
@@ -374,25 +393,6 @@
     
     
       <category term="IDEA" scheme="http://yoursite.com/tags/IDEA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Diary</title>
-    <link href="http://yoursite.com/2018/09/12/Diary/"/>
-    <id>http://yoursite.com/2018/09/12/Diary/</id>
-    <published>2018-09-12T04:00:00.000Z</published>
-    <updated>2019-11-24T05:21:58.089Z</updated>
-    
-    <summary type="html">
-    
-      日记。
-    
-    </summary>
-    
-    
-    
-      <category term="Diary" scheme="http://yoursite.com/tags/Diary/"/>
     
   </entry>
   
