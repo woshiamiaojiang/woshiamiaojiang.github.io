@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-26T16:06:35.794Z</updated>
+  <updated>2020-03-01T08:19:00.681Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>新版本微服务时代Spring Boot企业微信点餐系统</title>
+    <link href="http://yoursite.com/2020/03/01/%E6%96%B0%E7%89%88%E6%9C%AC%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%97%B6%E4%BB%A3Spring-Boot%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2020/03/01/新版本微服务时代Spring-Boot企业微信点餐系统/</id>
+    <published>2020-03-01T08:06:40.000Z</published>
+    <updated>2020-03-01T08:19:00.681Z</updated>
+    
+    <summary type="html">
+    
+      新版本微服务时代Spring Boot企业微信点餐系统学习笔记
+    
+    </summary>
+    
+    
+    
+      <category term="Project" scheme="http://yoursite.com/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java互联网架构师(P6+)课程</title>
     <link href="http://yoursite.com/2020/02/27/Java%E4%BA%92%E8%81%94%E7%BD%91%E6%9E%B6%E6%9E%84%E5%B8%88-P6-%E8%AF%BE%E7%A8%8B/"/>
     <id>http://yoursite.com/2020/02/27/Java互联网架构师-P6-课程/</id>
     <published>2020-02-26T16:03:58.000Z</published>
-    <updated>2020-02-26T16:06:35.794Z</updated>
+    <updated>2020-02-26T16:19:44.921Z</updated>
     
     <summary type="html">
     
@@ -368,25 +387,6 @@
     <summary type="html">
     
       慕课网IntelliJ IDEA神器使用技巧。
-    
-    </summary>
-    
-    
-    
-      <category term="IDEA" scheme="http://yoursite.com/tags/IDEA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA魔改教程</title>
-    <link href="http://yoursite.com/2018/11/11/IDEA%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2018/11/11/IDEA魔改教程/</id>
-    <published>2018-11-11T04:00:00.000Z</published>
-    <updated>2019-11-24T05:23:06.612Z</updated>
-    
-    <summary type="html">
-    
-      IDEA的魔改教程，基于尚硅谷IDEA教程。
     
     </summary>
     
