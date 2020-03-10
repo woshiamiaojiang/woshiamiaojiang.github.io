@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>如何白嫖3个月的JetBrains全家桶 - Hexo</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="John Doe">
+<meta name="description" content="如何白嫖3个月的JetBrains全家桶（包括Java神器IDEA）">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?12880554">
+
+<link rel="icon" href="/favicon-48x48.ico">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+                Home
+            </a>
+            
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+            
+
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Hexo
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Hexo</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Journal.
+        </div>
+        <div class="nav-subtitle">
+            隻言片語<br>於此匯聚
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+        
+
+        
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2020 <a href="http://yoursite.com">Hexo</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                ^
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper"
+                 style="background-image: url('/2020/03/10/如何白嫖3个月的JetBrains全家桶/Quest.png')">
+                <div class="post-title">
+                    如何白嫖3个月的JetBrains全家桶
+                    <div class="post-meta">
+                        <time datetime="2020-03-10T14:37:17.000Z" itemprop="datePublished">
+                            2020-03-10 22:37
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Quest/'>Quest</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h1><span id="如何白嫖3个月的jetbrains全家桶包括java神器idea">如何白嫖3个月的JetBrains全家桶（包括Java神器IDEA）</span></h1><h2><span id="1起源">1.起源</span></h2><p>3月10日下午无聊刷部落，刷到这样一条动态。</p>
+<img src="https://miion.me/image-hosting/image-20200310215026116.png" alt="image-20200310215026116" style="zoom:25%;">
+
+<p>说JetBrains官网搞了谜题，解出来赠送3个月的全家桶订阅。开启福尔摩斯之魂。</p>
+<h2><span id="2搜索">2.搜索</span></h2><img src="https://miion.me/image-hosting/image-20200310203710053.png" alt="image-20200310203710053" style="zoom: 50%;">
+
+<p>首先取了动态中的”JetBrains Quest”百度，结果答案为0，果然百度太垃圾了。</p>
+<p>立刻谷歌之，</p>
+<img src="https://miion.me/image-hosting/image-20200310204029746.png" alt="image-20200310204029746" style="zoom:33%;">
+
+<p>搜索结果第一个是jetbrains官方在推特官方发布的谜题活动。如果大家有信心可以从这里开始。</p>
+<img src="https://miion.me/image-hosting/image-20200310204630744.png" alt="image-20200310204630744" style="zoom: 25%;">
+
+<p>搜索结果第三个是谜题的最后一道关卡。</p>
+<img src="https://miion.me/image-hosting/image-20200310204653125.png" alt="image-20200310204653125" style="zoom:25%;">
+
+<p>搜索结果第四个是外国一个小哥发布的解密博客。</p>
+<img src="https://miion.me/image-hosting/image-20200310204608872.png" alt="image-20200310204608872" style="zoom: 25%;">
+
+<p>我偷懒，就直接看了小哥的回答。</p>
+<h2><span id="3谜题一">3.谜题一</span></h2><p>直接按照小哥的思路看他是怎么题解的。</p>
+<p>首先，他说他在推特上昨天3月9日看到JetBrains发布了这样一条动态。</p>
+<img src="https://miion.me/image-hosting/image-20200310204934777.png" alt="image-20200310204934777" style="zoom:33%;">
+
+<p>首先观察这些数字</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token number">48</span> <span class="token number">61</span> <span class="token number">76</span> <span class="token number">65</span> <span class="token number">20</span> <span class="token number">79</span> <span class="token number">6f</span> <span class="token number">75</span> <span class="token number">20</span> <span class="token number">73</span> <span class="token number">65</span> <span class="token number">65</span> 6e <span class="token number">20</span> <span class="token number">74</span> <span class="token number">68</span> <span class="token number">65</span> <span class="token number">20</span> <span class="token number">73</span> <span class="token number">6f</span> <span class="token number">75</span> <span class="token number">72</span> <span class="token number">63</span> <span class="token number">65</span> <span class="token number">20</span> <span class="token number">63</span> <span class="token number">6f</span> <span class="token number">64</span> <span class="token number">65</span> <span class="token number">20</span> <span class="token number">6f</span> <span class="token number">66</span> <span class="token number">20</span> <span class="token number">74</span> <span class="token number">68</span> <span class="token number">65</span> <span class="token number">20</span> 4a <span class="token number">65</span> <span class="token number">74</span> <span class="token number">42</span> <span class="token number">72</span> <span class="token number">61</span> <span class="token number">69</span> 6e <span class="token number">73</span> <span class="token number">20</span> <span class="token number">77</span> <span class="token number">65</span> <span class="token number">62</span> <span class="token number">73</span> <span class="token number">69</span> <span class="token number">74</span> <span class="token number">65</span> <span class="token number">3f</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>看起来像是十六进制字节，转换成ASCII，得到这样的提示：</p>
+<pre class="line-numbers language-java"><code class="language-java">Have you seen the source code of the JetBrains website<span class="token operator">?</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>你有看过JetBrains官网的源码吗？</p>
+<p>嗯，打开官网<a href="https://www.jetbrains.com/" target="_blank" rel="noopener">https://www.jetbrains.com/</a></p>
+<p>右击检查源代码</p>
+<p><img src="https://miion.me/image-hosting/image-20200310205309415.png" alt="image-20200310205309415"></p>
+<p>搜索quest，定位到了这样一条彩蛋：</p>
+<p><img src="https://miion.me/image-hosting/image-20200310205401395.png" alt="image-20200310205401395"></p>
+<pre class="line-numbers language-java"><code class="language-java">Welcome to the JetBrains Quest<span class="token punctuation">.</span>
+
+What awaits ahead is a series of challenges<span class="token punctuation">.</span> Each one will require a little initiative<span class="token punctuation">,</span> a little thinking<span class="token punctuation">,</span> and a whole lot of JetBrains to get to the end<span class="token punctuation">.</span> Cheating is allowed and in some places encouraged<span class="token punctuation">.</span> You have until the 15th of March at <span class="token number">12</span><span class="token operator">:</span><span class="token number">00</span> CET to finish all the quests<span class="token punctuation">.</span>
+Getting to the end of each quest will earn you a reward<span class="token punctuation">.</span>
+Let the quest commence<span class="token operator">!</span>
+
+JetBrains has a lot of products<span class="token punctuation">,</span> but there is one that looks like a joke on our Products page<span class="token punctuation">,</span> you should start there<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">(</span>hint<span class="token operator">:</span> use Chrome Incognito mode<span class="token punctuation">)</span>
+It’s dangerous to go alone take <span class="token keyword">this</span> key<span class="token operator">:</span> Good luck<span class="token operator">!</span> <span class="token operator">==</span> Jrrg#oxfn$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>大意是：中欧时间3月15日之前解出谜题都会有奖励。</p>
+<p>谜题：JetBrains有很多产品，在我们的产品也有个像’joke’的，你要从哪里开始。提示：用谷歌浏览器无痕模式。</p>
+<p>不要直接就走了，带上这个密钥：Good luck! == Jrrg#oxfn$</p>
+<h2><span id="4谜题二">4.谜题二</span></h2><p>打开谷歌无痕，输入：<a href="https://www.jetbrains.com/products.html" target="_blank" rel="noopener">https://www.jetbrains.com/products.html</a></p>
+<img src="https://miion.me/image-hosting/image-20200310210354357.png" alt="image-20200310210354357" style="zoom: 25%;">
+
+<p>很快就找到了传说中的’joke’。从learn more中点进去。得到谜题。</p>
+<img src="https://miion.me/image-hosting/image-20200310210458782.png" alt="image-20200310210458782" style="zoom: 50%;">
+
+<pre class="line-numbers language-java"><code class="language-java">You have discovered our JetBrains Quest<span class="token operator">!</span> If you don’t know what <span class="token keyword">this</span> is<span class="token punctuation">,</span> you should start from Twitter<span class="token punctuation">,</span> Facebook or LinkedIn<span class="token punctuation">.</span>
+
+
+To <span class="token keyword">continue</span> to the next challenge you need to go to the following link… But there is a problem<span class="token punctuation">,</span> the last <span class="token number">3</span> digits are missing<span class="token operator">:</span>
+
+
+https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>jb<span class="token punctuation">.</span>gg<span class="token operator">/</span>###
+
+
+To get these digits you need to know how many prime numbers there are between <span class="token number">500</span> and <span class="token number">5000</span>
+
+
+Good Luck<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>意思是这个<a href="https://jb.gg/###链接缺了3个数字。就问你500到5000之间有多少个质数。这还不简单，立刻百度。" target="_blank" rel="noopener">https://jb.gg/###链接缺了3个数字。就问你500到5000之间有多少个质数。这还不简单，立刻百度。</a></p>
+<p>答案<strong>574</strong>个。</p>
+<h2><span id="5谜题三">5.谜题三</span></h2><p>输入<a href="https://jb.gg/574" target="_blank" rel="noopener">https://jb.gg/574</a></p>
+<p>重定向到了这个页面</p>
+<p><img src="https://miion.me/image-hosting/image-20200310210756340.png" alt="image-20200310210756340"></p>
+<pre class="line-numbers language-java"><code class="language-java">Follow quests
+If you are following the JetBrains quest and would like to go to the next challenge<span class="token punctuation">,</span> here is your clue<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>说下面这张图片是你的线索。</p>
+<img src="https://miion.me/image-hosting/image-20200310211008072.png" alt="image-20200310211008072" style="zoom:25%;">
+
+<p>这题需要你对JetBrains网站很了解。</p>
+<p>这个Logo <strong>YouTrack</strong>是JebBrains网站的问题区，将后面的问题编码输进去。</p>
+<img src="https://miion.me/image-hosting/image-20200310211105798.png" alt="image-20200310211105798" style="zoom: 80%;">
+
+<p>得到链接<a href="https://youtrack.jetbrains.com/issue/MPS-31816" target="_blank" rel="noopener">https://youtrack.jetbrains.com/issue/MPS-31816</a></p>
+<h2><span id="6谜题四">6.谜题四</span></h2><p>跳转到这个页面。</p>
+<p><img src="https://miion.me/image-hosting/image-20200310211335692.png" alt="image-20200310211335692"></p>
+<pre class="line-numbers language-java"><code class="language-java">JetBrains Quest
+
+“The key is to think back to the beginning<span class="token punctuation">.</span>” <span class="token operator">--</span> The JetBrains Quest team
+
+Qlfh$#Li#<span class="token operator">|</span>rx#duh#uhdglqj#wklv#<span class="token operator">|</span>rx#pxvw#kdyh#zrunhg#rxw#krz#wr#ghfu<span class="token operator">|</span>sw#lw1#Wklv#lv#rxu#lvvxh#wudfnhu#ghvljqhg#iru#djloh#whdpv1#Lw#lv#iuhh#iru#xs#wr#<span class="token number">6</span>#xvhuv#lq#Forxg#dqg#iru#<span class="token number">43</span>#xvhuv#lq#Vwdqgdorqh<span class="token operator">/</span>#vr#li#<span class="token operator">|</span>rx#zdqw#wr#jlyh#lw#d#jr#lq#<span class="token operator">|</span>rxu#whdp#wkhq#zh#wrwdoo<span class="token operator">|</span>#uhfrpphqg#lw1#<span class="token operator">|</span>rx#kdyh#ilqlvkhg#wkh#iluvw#Txhvw<span class="token operator">/</span>#qrz#lw“v#wlph#wr#uhghhp#<span class="token operator">|</span>rxu#iluvw#sul<span class="token punctuation">}</span>h1#Wkh#frgh#iru#wkh#iluvw#txhvw#lv#‟WkhGulyhWrGhyhors†<span class="token number">1</span>#Jr#wr#wkh#Txhvw#Sdjh#dqg#xvh#wkh#frgh#wr#fodlp#<span class="token operator">|</span>rxu#sul<span class="token punctuation">}</span>h1#kwwsv<span class="token operator">=</span>22zzz1mhweudlqv1frp2surpr2txhvw2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最后一题了，提示是”需要你回头想钥匙“。回头想？哦，一开始第一题要你带着的钥匙还记得不？</p>
+<pre class="line-numbers language-java"><code class="language-java">Good luck<span class="token operator">!</span> <span class="token operator">==</span> Jrrg#oxfn$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后小哥说，我不想再告诉你们答案了，不能扫兴了，这题太简单了，解出来就可以得到奖励。</p>
+<p>我为了也不扫兴，就不直接告知大家答案了，给大家提示，还是希望大家也试试，有点计算机基础或者高中数学知识应该都能做出来。小学生的话，拿张纸一个一个写下来也能知道答案。所以希望大家也不要再评论中把答案写出来，这样就太没意思了。</p>
+<p>小哥给了提示Substitution cipher(<strong>换位密码</strong>)。你百度一下Substitution cipher这个，看第一个结果大概就猜出来是什么意思了。</p>
+<p>一开始我还以为是Good luck 不等于 Jrrg#oxfn$</p>
+<p>但其实等号后面是空格，等号的左右是双边对称的。</p>
+<h2><span id="7兑奖">7.兑奖</span></h2><p>我感觉提示差不多了，把上面的密文解出来得到一个网址和一个Code。</p>
+<p>到那个网址里输入你的邮箱和刚才的Code。</p>
+<img src="https://miion.me/image-hosting/image-20200310212638016.png" alt="image-20200310212638016" style="zoom:25%;">
+
+<p>等待两分钟左右，收到一封邮件。邮件里附赠了三个月JetBrains全家桶的订阅兑换密钥。</p>
+<img src="https://miion.me/image-hosting/image-20200310212758092.png" alt="image-20200310212758092" style="zoom:25%;">
+
+<p>点击蓝色的 <strong>HOW TO REDEEM THE CODE</strong></p>
+<img src="https://miion.me/image-hosting/image-20200310212958307.png" alt="image-20200310212958307" style="zoom: 25%;">
+
+<p>输入上面的密钥，你的名字，姓氏，邮箱，国家/地区。然后点提交。</p>
+<p>然后再等2分钟左右，又收到一封邮件</p>
+<p><img src="https://miion.me/image-hosting/image-20200310215443570.png" alt="image-20200310215443570"></p>
+<p>让你点击其中的链接激活账号（流程有点繁琐。。。），</p>
+<img src="https://miion.me/image-hosting/image-20200310213641784.png" alt="image-20200310213641784" style="zoom:25%;">
+
+<p>让你输入名字，姓氏，用户名，密码。点击提交。</p>
+<img src="https://miion.me/image-hosting/image-20200310213857707.png" alt="image-20200310213857707" style="zoom:25%;">
+
+<p>终于看到了开通至6月10日。</p>
+<p>打开IDEA验证。</p>
+<img src="https://miion.me/image-hosting/image-20200310214055957.png" alt="image-20200310214055957" style="zoom:25%;">
+
+<img src="https://miion.me/image-hosting/image-20200310214119464.png" alt="image-20200310214119464" style="zoom:25%;">
+
+<p>输入刚刚注册的账号密码。延长到了6月9日。</p>
+<img src="https://miion.me/image-hosting/image-20200310214215610.png" alt="image-20200310214215610" style="zoom:25%;">
+
+<h2><span id="8总结">8.总结</span></h2><p>自己也是偷了懒，基本上都是看的外国小哥的回答。最后一题也是根据他的提示用Java写了简单的代码得到最后的答案。感谢那位小哥，万能的谷歌与金主JetBrains。</p>
+<p>下面附上小哥的原链接，感兴趣的朋友可以区看看</p>
+<p>参考资料：</p>
+<p><a href="https://mihajlonesic.gitlab.io/archive/jetbrains-quest/" target="_blank" rel="noopener">1.外国小哥</a></p>
+<p><a href="https://twitter.com/jetbrains/status/1236986174075482113" target="_blank" rel="noopener">2.游戏的起点</a></p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2020/03/01/%E6%96%B0%E7%89%88%E6%9C%AC%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%97%B6%E4%BB%A3Spring-Boot%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/">
+        Next post<br>新版本微服务时代Spring Boot企业微信点餐系统
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2020 <a href="http://yoursite.com">Hexo</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?57460406"></script>
+
+
+
+</body>
+</html>

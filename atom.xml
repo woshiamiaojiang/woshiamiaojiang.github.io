@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-01T08:19:00.681Z</updated>
+  <updated>2020-03-10T14:39:51.273Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何白嫖3个月的JetBrains全家桶</title>
+    <link href="http://yoursite.com/2020/03/10/%E5%A6%82%E4%BD%95%E7%99%BD%E5%AB%963%E4%B8%AA%E6%9C%88%E7%9A%84JetBrains%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    <id>http://yoursite.com/2020/03/10/如何白嫖3个月的JetBrains全家桶/</id>
+    <published>2020-03-10T14:37:17.000Z</published>
+    <updated>2020-03-10T14:39:51.273Z</updated>
+    
+    <summary type="html">
+    
+      如何白嫖3个月的JetBrains全家桶（包括Java神器IDEA）
+    
+    </summary>
+    
+    
+    
+      <category term="Quest" scheme="http://yoursite.com/tags/Quest/"/>
+    
+  </entry>
+  
+  <entry>
     <title>新版本微服务时代Spring Boot企业微信点餐系统</title>
     <link href="http://yoursite.com/2020/03/01/%E6%96%B0%E7%89%88%E6%9C%AC%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%97%B6%E4%BB%A3Spring-Boot%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%82%B9%E9%A4%90%E7%B3%BB%E7%BB%9F/"/>
     <id>http://yoursite.com/2020/03/01/新版本微服务时代Spring-Boot企业微信点餐系统/</id>
     <published>2020-03-01T08:06:40.000Z</published>
-    <updated>2020-03-01T08:19:00.681Z</updated>
+    <updated>2020-03-01T08:39:50.847Z</updated>
     
     <summary type="html">
     
@@ -374,25 +393,6 @@
     
     
       <category term="Concurrency" scheme="http://yoursite.com/tags/Concurrency/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA神器技巧</title>
-    <link href="http://yoursite.com/2018/11/16/IDEA%E7%A5%9E%E5%99%A8%E6%8A%80%E5%B7%A7/"/>
-    <id>http://yoursite.com/2018/11/16/IDEA神器技巧/</id>
-    <published>2018-11-16T04:00:00.000Z</published>
-    <updated>2019-11-24T05:23:11.382Z</updated>
-    
-    <summary type="html">
-    
-      慕课网IntelliJ IDEA神器使用技巧。
-    
-    </summary>
-    
-    
-    
-      <category term="IDEA" scheme="http://yoursite.com/tags/IDEA/"/>
     
   </entry>
   
