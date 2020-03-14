@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>白嫖JetBrains全家桶第二波与第三波 - Hexo</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="John Doe">
+<meta name="description" content="白嫖JetBrains全家桶第二波与第三波">
+<meta name="keywords" content="">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?74742133">
+
+<link rel="icon" href="/favicon-48x48.ico">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+                Home
+            </a>
+            
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+            
+
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            Hexo
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">Hexo</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Journal.
+        </div>
+        <div class="nav-subtitle">
+            隻言片語<br>於此匯聚
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+        
+
+        
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2020 <a href="http://yoursite.com">Hexo</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                ^
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper"
+                 style="background-image: url('/2020/03/14/白嫖JetBrains全家桶第二波与第三波/Quest.png')">
+                <div class="post-title">
+                    白嫖JetBrains全家桶第二波与第三波
+                    <div class="post-meta">
+                        <time datetime="2020-03-14T08:53:12.000Z" itemprop="datePublished">
+                            2020-03-14 16:53
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href='/tags/Quest/'>Quest</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h1><span id="白嫖jetbrains全家桶第二波与第三波">白嫖JetBrains全家桶第二波与第三波</span></h1><h2><span id="1回顾第一波">1.回顾第一波</span></h2><p>第一波的JetBrains猜谜活动见我另外文章，提醒一下，第一波，第二波，第三波兑奖时间要在中欧时间3月15日之前。因为有许多人将最后一题的code泄露出去了，官方将最后一题的密文修改了。将第一波，第二波，第三波奖品兑换，总共是9个月的免费JetBrains全家桶。</p>
+<h2><span id="2第一关">2.第一关</span></h2><p>JetBrains3月11日在推特上发布了第二题</p>
+<img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314125931522.png" alt="image-20200314125931522" style="zoom:33%;">
+
+<pre class="line-numbers language-java"><code class="language-java">Time <span class="token keyword">for</span> the next #JetBrainsQuest<span class="token operator">!</span>
+<span class="token punctuation">.</span>spleh A<span class="token operator">+</span>lrtC<span class="token operator">/</span>dmC <span class="token punctuation">.</span>thgis fo tuo si ti semitemos <span class="token punctuation">,</span>etihw si txet nehw sa drah kooL <span class="token punctuation">.</span>tseretni wohs dluohs uoy ecalp a si <span class="token punctuation">,</span>dessecorp si xat hctuD erehw esac ehT <span class="token punctuation">.</span>sedih tseuq fo txen eht erehw si <span class="token punctuation">,</span>deificeps era segaugnal cificeps<span class="token operator">-</span>niamod tcudorp ehT<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>通过观察，很明显，是将文本倒转了，将文本到转回来。</p>
+<pre class="line-numbers language-java"><code class="language-java">The product domain<span class="token operator">-</span>specific languages are specified<span class="token punctuation">,</span> is where the next of quest hides<span class="token punctuation">.</span> The <span class="token keyword">case</span> where Dutch tax is processed<span class="token punctuation">,</span> is a place you should show interest<span class="token punctuation">.</span> Look hard as when text is white<span class="token punctuation">,</span> sometimes it is out of sight<span class="token punctuation">.</span> Cmd<span class="token operator">/</span>Ctrl<span class="token operator">+</span>A helps<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>关键词<code>domain-specific languages</code>的产品，去产品页面找找<a href="https://www.jetbrains.com/products.html。" target="_blank" rel="noopener">https://www.jetbrains.com/products.html。</a></p>
+<p>很快就定位到了</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314130504529.png" alt="image-20200314130504529"></p>
+<p>点击图标进去。</p>
+<p>提示二：关键词<code>Dutch tax</code>。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314130714192.png" alt="image-20200314130714192"></p>
+<p>定位到了Agile Law Execution Factory。点击<a href="https://resources.jetbrains.com/storage/products/mps/docs/MPSQuest_DTO_Case_Study.pdf" target="_blank" rel="noopener">Read MPS case study</a></p>
+<p>进入一个PDF文档。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314130811929.png" alt="image-20200314130811929"></p>
+<p>提示三：通过Cmd/Ctrl+A找到白色字</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314130916087.png" alt="image-20200314130916087"></p>
+<h2><span id="3第二关">3.第二关</span></h2><p>我们找到了一处空白的字。粘贴下来。</p>
+<pre class="line-numbers language-java"><code class="language-java">This is our 20th year as a company<span class="token punctuation">,</span>
+we have shared numbers in our JetBrains
+Annual report<span class="token punctuation">,</span> sharing the section with
+<span class="token number">18</span><span class="token punctuation">,</span><span class="token number">650</span> numbers will progress your quest<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>寻找JetBrains二十周年报告。</p>
+<p>在JetBrains首页很快就找到了这个。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314131155165.png" alt="image-20200314131155165"></p>
+<p>点进去<a href="https://www.jetbrains.com/company/annualreport/2019/" target="_blank" rel="noopener">https://www.jetbrains.com/company/annualreport/2019/</a></p>
+<p>关键词<code>18,650</code>与<code>share</code></p>
+<p>浏览页面，找到了这个。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314131745937.png" alt="image-20200314131745937"></p>
+<p>所有的数字加起来是18650。点击分享的按钮。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314131928886.png" alt="image-20200314131928886"></p>
+<h2><span id="4第三关">4.第三关</span></h2><p>有这样的文字</p>
+<pre class="line-numbers language-java"><code class="language-java">I have found the JetBrains Quest<span class="token operator">!</span> Sometimes you just need to look closely at the Haskell language<span class="token punctuation">,</span> Hello<span class="token punctuation">,</span>World<span class="token operator">!</span> in the hackathon lego brainstorms project https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>blog<span class="token punctuation">.</span>jetbrains<span class="token punctuation">.</span>com<span class="token operator">/</span>blog<span class="token operator">/</span><span class="token number">2019</span><span class="token operator">/</span><span class="token number">11</span><span class="token operator">/</span><span class="token number">22</span><span class="token operator">/</span>jetbrains<span class="token operator">-</span>7th<span class="token operator">-</span>annual<span class="token operator">-</span>hackathon<span class="token operator">/</span> #JetBrainsQuest https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>jetbrains<span class="token punctuation">.</span>com<span class="token operator">/</span>company<span class="token operator">/</span>annualreport<span class="token operator">/</span><span class="token number">2019</span><span class="token operator">/</span> 来自 <span class="token annotation punctuation">@JetBrains</span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在黑客马拉松的 lego brainstorms项目中仔细寻找Haskell的Hello,World!</p>
+<p><a href="https://blog.jetbrains.com/blog/2019/11/22/jetbrains-7th-annual-hackathon/" target="_blank" rel="noopener">https://blog.jetbrains.com/blog/2019/11/22/jetbrains-7th-annual-hackathon/</a> </p>
+<p>下面正好有一个链接，点进去。</p>
+<p>定位到了这个</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314132440787.png" alt="image-20200314132440787"></p>
+<p>定位这样图片，发现了这个</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314132613640.png" alt="image-20200314132613640"></p>
+<pre class="line-numbers language-java"><code class="language-java">d1D j00 kN0w J378r41n2 <span class="token number">12</span> 4lW4Y2 H1R1N9<span class="token operator">?</span> ch3CK 0u7 73h K4r33r2 P493 4nD <span class="token number">533</span> <span class="token number">1f</span> 7H3r3 <span class="token number">12</span> <span class="token number">4</span> J08 F0r J00 0R <span class="token number">4</span> KW357 cH4LL3n93 <span class="token number">70</span> <span class="token number">90</span> fUr7h3r @ l3457<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>仔细看，其实是吧一些英文字母改成了数字。猜出来应该其实是下面的英文</p>
+<pre class="line-numbers language-java"><code class="language-java">did you know jetbrains is always hiring<span class="token operator">?</span>check out the careers page and see <span class="token keyword">if</span> there is a job or a quest<span class="token punctuation">.</span> challenge to go further at least<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>要去招聘页面找quest的job。在首页找到了这个，点进去。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314132943128.png" alt="image-20200314132943128"></p>
+<p><a href="https://www.jetbrains.com/careers/jobs/" target="_blank" rel="noopener">https://www.jetbrains.com/careers/jobs/</a></p>
+<p>定位到了这个。点进去。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314133123462.png" alt="image-20200314133123462"></p>
+<p>看到了这样一条</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314133421453.png" alt="image-20200314133421453"></p>
+<p>意思是把用在Konami游戏中的作弊码在JetBrains游戏开发页面敲一遍。</p>
+<p>在Solutions里找到了<a href="https://www.jetbrains.com/gamedev/，点击去![image-20200314133601030](https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314133601030.png)" target="_blank" rel="noopener">https://www.jetbrains.com/gamedev/，点击去![image-20200314133601030](https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314133601030.png)</a></p>
+<p>然后是科乐美游戏作弊码，玩过“魂斗罗”游戏都知道的，<strong>上上下下左右左右BABA</strong>，这个也是LOL中男枪的一句经典台词。</p>
+<p>我是开了无痕模式，才进入游戏的。正常浏览输入没有反应。</p>
+<p>结果小时候玩过的消砖游戏。消除后就能看见兑奖地址与密钥。大家自己也玩一玩。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314134723819.png" alt="image-20200314134723819"></p>
+<h1><span id="第三波">第三波</span></h1><p>结束完第二波，我们立马第三波猜谜，也是最后一波了。</p>
+<h2><span id="1第一关">1.第一关</span></h2><p>在推特上找到谜题</p>
+<img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314135150827.png" alt="image-20200314135150827" style="zoom: 50%;">
+
+<p>看起来像是base64。解密试一下。</p>
+<img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314135455228.png" alt="image-20200314135455228" style="zoom:33%;">
+
+<p>得到</p>
+<pre class="line-numbers language-java"><code class="language-java">Have you seen the post on our Instagram account<span class="token operator">?</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在Instagram上找JetBrains</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314140010807.png" alt="image-20200314140010807"></p>
+<p>看到这个帖子，点进去。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314140031289.png" alt="image-20200314140031289"></p>
+<p>看到了提示</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314140050749.png" alt="image-20200314140050749"></p>
+<pre class="line-numbers language-java"><code class="language-java">Welcome to the <span class="token keyword">final</span> Quest<span class="token operator">!</span> You should start on the Kotlin Playground<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>jb<span class="token punctuation">.</span>gg<span class="token operator">/</span>kotlin_quest
+P<span class="token punctuation">.</span>S<span class="token punctuation">.</span> If you don’t know about the #JetBrainsQuest<span class="token punctuation">,</span> it’s not too late to find out<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>进入链接<a href="https://jb.gg/kotlin_quest" target="_blank" rel="noopener">https://jb.gg/kotlin_quest</a></p>
+<h2><span id="2第二关">2.第二关</span></h2><pre class="line-numbers language-java"><code class="language-java">fun <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   val s <span class="token operator">=</span> <span class="token string">"Zh#kdyh#ehhq#zrunlqj#552:#rq#wkh#ylghr#iru#wkh#iluvw#hslvrgh#ri#wkh#SksVwrup#HDS1#Li#zh#jdyh#|rx#d#foxh/#lw#zrxog#eh#hdv|#dv#sl1"</span>
+
+    val n<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token function">TODO</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token keyword">for</span> <span class="token punctuation">(</span>c in s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token function">print</span><span class="token punctuation">(</span>c <span class="token operator">-</span> n<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>一个没见过的代码。又是一堆#号。想想第一波的最后一题是怎么解出来的。试试能不能解出来。</p>
+<p>运气不错，解出来这个。</p>
+<pre class="line-numbers language-java"><code class="language-java">We have been working <span class="token number">22</span><span class="token operator">/</span><span class="token number">7</span> on the video <span class="token keyword">for</span> the first episode of the PhpStorm EAP<span class="token punctuation">.</span> If we gave you a clue<span class="token punctuation">,</span> it would be easy as pi<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2><span id="3第三关">3.第三关</span></h2><p>我们花了7天22个校史制作了PhpStorm EAP的第一集。给你个提示，容易的像Π。</p>
+<p>Π不就是3.1415926。</p>
+<p>找到视频，点进去。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314140943879.png" alt="image-20200314140943879"></p>
+<p>寻找3：14的彩蛋。</p>
+<p>视频抖动了一下，返回观看，发现homepage链接被替换了。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314141153011.png" alt="image-20200314141153011"></p>
+<p>进入链接<a href="https://jb.gg/31415926" target="_blank" rel="noopener">https://jb.gg/31415926</a></p>
+<h2><span id="4第四关">4.第四关</span></h2><p>一分钟内快问快答。疯狂谷歌。需要全部答对。</p>
+<p>How many people founded JetBrains?, Where is JetBrains headquarters?, How much external funding have JetBrains received?</p>
+<p>这题建议跳过。答对5题跳出。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314142135363.png" alt="image-20200314142135363"></p>
+<pre class="line-numbers language-java"><code class="language-java">You chose wisely<span class="token punctuation">.</span>
+Almost there<span class="token operator">!</span> The last challenge is in the Tips of the Day of a specific IntelliJ IDEA Community version from our latest build page in Confluence<span class="token punctuation">,</span> but… there is a <span class="token keyword">catch</span><span class="token punctuation">.</span> You have to know which version to look <span class="token keyword">for</span><span class="token punctuation">.</span> To find the build number<span class="token punctuation">,</span> you need sight beyond sight<span class="token operator">:</span>
+
+<span class="token punctuation">.</span> Not Everything Today Does All You Could Ask<span class="token punctuation">.</span> Lessons Learned From Other Relevant Solutions<span class="token punctuation">,</span> Possibly Even Another Kind Emerge<span class="token punctuation">.</span> Risking Sometimes Being Liberal Or Generous Proves Ordinary Simple Tests Infinitely More Annoying<span class="token punctuation">.</span> Get Examining Hidden Initial Designated Early Symbols<span class="token punctuation">.</span> They Have Everything Needed<span class="token punctuation">,</span> Except Xerox<span class="token punctuation">,</span> To Completely Level Up Everything<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>意思是需要你找到JetBrains在Confluence上发布的某个版本号的社区版的IDEA，下载下来寻找每日提示。</p>
+<p>需要你找到哪个版本号。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token punctuation">.</span> Not Everything Today Does All You Could Ask<span class="token punctuation">.</span> Lessons Learned From Other Relevant Solutions<span class="token punctuation">,</span> Possibly Even Another Kind Emerge<span class="token punctuation">.</span> Risking Sometimes Being Liberal Or Generous Proves Ordinary Simple Tests Infinitely More Annoying<span class="token punctuation">.</span> Get Examining Hidden Initial Designated Early Symbols<span class="token punctuation">.</span> They Have Everything Needed<span class="token punctuation">,</span> Except Xerox<span class="token punctuation">,</span> To Completely Level Up Everything<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>每个字母的开头都是大写。想到了《唐伯虎点秋香》中的“我爱秋香”梗。</p>
+<p>将上面的小写字母与符号都删掉，得到</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token punctuation">.</span>NET DAY CALL FOR SPEAKERS BLOG POST IMAGE HIDES THE NEXT CLUE<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>.NET DAY CALL FOR SPEAKERS博客发布的照片里有提示。</p>
+<p>谷歌搜一搜.NET DAY CALL FOR SPEAKERS，进入<a href="https://blog.jetbrains.com/dotnet/2020/02/13/jetbrains-net-day-online-2020-call-speakers/" target="_blank" rel="noopener">https://blog.jetbrains.com/dotnet/2020/02/13/jetbrains-net-day-online-2020-call-speakers/</a></p>
+<p>看到这张照片</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314142818385.png" alt="image-20200314142818385"></p>
+<p>F12点击图片，得到</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314143035443.png" alt="image-20200314143035443"></p>
+<pre class="line-numbers language-java"><code class="language-java">you_are_looking_for_build_201<span class="token operator">-</span><span class="token number">6303</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>版本号201.6303</p>
+<p>谷歌一下</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314143214805.png" alt="image-20200314143214805"></p>
+<p>点进去</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314143237297.png" alt="image-20200314143237297"></p>
+<p>看标题，Quest Build Edition。应该就是我们所需要的的。需要点击下载，安装。</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314143309864.png" alt="image-20200314143309864"></p>
+<p>下载下来安装，寻找每日提示。得到这个</p>
+<p><img src="https://raw.githubusercontent.com/woshiamiaojiang/image-hosting/master/image-20200314143657254.png" alt="46023125"></p>
+<pre class="line-numbers language-java"><code class="language-java">You have discovered our JetBrains Quest<span class="token operator">!</span> If you don’t know what <span class="token keyword">this</span> is<span class="token punctuation">,</span> you should start from the beginning<span class="token punctuation">.</span>
+This is it<span class="token punctuation">.</span> The last puzzle<span class="token punctuation">.</span> You are just one step away from glory<span class="token operator">!</span>
+Now you just need the Key to unlock the Quest page<span class="token punctuation">.</span>
+The Key is the first and last <span class="token number">4</span> digits of the <span class="token number">50</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token operator">^</span><span class="token number">6</span> position of the Fibonacci <span class="token function">sequence</span> <span class="token punctuation">(</span><span class="token function">F</span><span class="token punctuation">(</span><span class="token number">50</span> Million<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>
+As you may know by now<span class="token punctuation">,</span> not all that glitters is gold<span class="token punctuation">,</span> and to solve <span class="token keyword">this</span> puzzle you should not go straight <span class="token keyword">for</span> the obvious answer<span class="token punctuation">.</span> May you make a glorious choice<span class="token punctuation">.</span>
+Remember that you have until the 15th of March <span class="token number">12</span><span class="token operator">:</span><span class="token number">00</span> CEST<span class="token number">.46023125</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2><span id="5第五关">5.第五关</span></h2><p>密钥是斐波那契数列第五千万项的前四位和后四位</p>
+<p>去网上找个斐波那契数列算法算一下吧。得到的就是一个8个数字的code，以4开头。</p>
+<p>带着这个code一样去<a href="https://www.jetbrains.com/promo/quest/兑换。" target="_blank" rel="noopener">https://www.jetbrains.com/promo/quest/兑换。</a></p>
+<p>记得要在中欧3月15日之前哦。</p>
+<p>第二关奖品是全家桶免费3个月。第三关是8折优惠券。</p>
+<p>我有试过将第二关的兑奖密钥激活，结果是账号上有两个3个月的订阅，而不是叠加。所以建议是在第二关密钥在3个月有效期的最后几天再添加。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2020/03/10/%E5%A6%82%E4%BD%95%E7%99%BD%E5%AB%963%E4%B8%AA%E6%9C%88%E7%9A%84JetBrains%E5%85%A8%E5%AE%B6%E6%A1%B6/">
+        Next post<br>如何白嫖3个月的JetBrains全家桶
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2020 <a href="http://yoursite.com">Hexo</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"
+        integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"
+        integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
+        integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?89523691"></script>
+
+
+
+</body>
+</html>

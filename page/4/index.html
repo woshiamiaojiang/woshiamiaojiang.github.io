@@ -4,11 +4,11 @@
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>码出规范：《阿里巴巴Java开发手册》详解学习笔记 - Hexo</title>
+    <title>Hexo</title>
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="John Doe">
-<meta name="description" content="慕课网专栏 - 码出规范：《阿里巴巴Java开发手册》详解学习笔记">
+<meta name="description" content="A Blog Powered By Hexo">
 <meta name="keywords" content="">
 
     <meta charset="utf-8">
@@ -18,7 +18,7 @@
     <meta name="renderer" content="webkit">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css?69749028">
+<link rel="stylesheet" href="/css/journal.css?2147315">
 
 <link rel="icon" href="/favicon-48x48.ico">
 
@@ -64,7 +64,7 @@
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
     <div class="drawer-content">
         <div class="drawer-menu">
-            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+            <a class="a-block drawer-menu-item active" href="http://yoursite.com">
                 Home
             </a>
             
@@ -144,61 +144,81 @@
         </a>
 
         
+        
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                4<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>4
+            </span>
+        </div>
+        
+
+        
+        <a class="pagination-action" href="/page/3/">
+            <i class="material-icons pagination-action-icon">
+                <
+            </i>
+        </a>
+        
+
+        
+        
     </div>
 </div>
 
 
 
 <div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-shadow">
-        <div class="post">
-            <div class="post-head-wrapper"
-                 style="background-image: url('/2020/02/23/码出规范：《阿里巴巴Java开发手册》详解学习笔记/AliJavaManual.jpg')">
-                <div class="post-title">
-                    码出规范：《阿里巴巴Java开发手册》详解学习笔记
-                    <div class="post-meta">
-                        <time datetime="2020-02-23T10:39:16.000Z" itemprop="datePublished">
-                            2020-02-23 18:39
-                        </time>&nbsp;
-                        
-    
-                        
-                        
-                        <i class="material-icons" style="">label</i>
-                        
-                        <a href='/tags/Clean-Code/'>Clean Code</a>
-                        
-                        
+    <div class="post-list-container post-list-container-no-background">
+        
+        <a href="/2016/10/13/hello-world/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            Hello World
+                        </div>
+                        <div class="post-item-summary">
+                            hexo的初始文件，亦即the first post。
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-13
+                        </div>
                     </div>
+                    
+                    <div class="post-item-image-wrapper">
+                        <!--<div class="post-item-image" style="background-image: url('/2016/10/13/hello-world/hexo.jpg')">-->
+						<div class="post-item-image" style="background-image: url('/2016/10/13/hello-world/hexo.jpg')">
+						</div>
+                    </div>
+                    
                 </div>
             </div>
+        </a>
+        
     
-            <div class="post-body-wrapper">
-                <div class="post-body">
-                    <p><a href="https://github.com/woshiamiaojiang/markdown/blob/master/码出规范：《阿里巴巴Java开发手册》详解.md" target="_blank" rel="noopener">慕课网专栏 - 码出规范：《阿里巴巴Java开发手册》详解学习笔记</a></p>
+        
+<div class="pagination index-page">
+    
+    <a class="pagination-action" href="/page/3/" style="opacity: 1">
+        
+            <i class="material-icons pagination-action-icon">
+                <
+            </i>
+        </a>
 
-                </div>
-            </div>
-    
-            <nav class="post-pagination">
-    
-    <a class="newer-posts" href="/2020/02/26/%E9%9D%A2%E8%AF%95%E5%AE%98%E7%B3%BB%E7%BB%9F%E7%B2%BE%E8%AE%B2Java%E6%BA%90%E7%A0%81%E5%8F%8A%E5%A4%A7%E5%8E%82%E7%9C%9F%E9%A2%98/">
-        Previous post<br>面试官系统精讲Java源码及大厂真题
-    </a>
-    
-    <span class="page-number"></span>
-    
-    <a class="older-posts" href="/2020/01/27/XMind2019%E8%B6%85%E5%BC%BA%E7%9B%98%E7%82%B9/">
-        Next post<br>XMind2019超强盘点
-    </a>
-    
-</nav>
-
-    
-            
-
-
+        <div class="pagination-indicator">
+            <span>4/4</span>
         </div>
+
+        
+            <a class="pagination-action" style="opacity: 0">
+                
+                <i class="material-icons pagination-action-icon">
+                    >
+                </i>
+            </a>
+</div>
+
     </div>
     <div class="single-column-footer">
     Proudly published with Hexo<br>
@@ -220,9 +240,6 @@
         integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js"
         integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js?78839690"></script>
-
-
-
+<script src="/js/journal.js?99137771"></script>
 </body>
 </html>
